@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forbb</title>
+    <meta
+      name="description"
+      content="forbb is now published on GitHub Pages."
+    />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #131b2f;
+        --card: #1d2943;
+        --text: #edf2ff;
+        --muted: #a7b3d0;
+        --accent: #7dd3fc;
+        --accent-strong: #38bdf8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(circle at top, #17213a 0%, var(--bg) 50%);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+      }
+
+      .container {
+        width: min(900px, calc(100% - 32px));
+      }
+
+      .card {
+        background: rgba(19, 27, 47, 0.92);
+        border: 1px solid rgba(125, 211, 252, 0.25);
+        border-radius: 22px;
+        padding: 48px 32px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.2rem, 5vw, 4.4rem);
+        line-height: 1.05;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-top: 28px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        color: #081320;
+        padding: 12px 18px;
+        border-radius: 999px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="eyebrow">GitHub Pages</div>
+        <h1>forbb</h1>
+        <p>
+          This site is live and published from the repository root using GitHub Pages.
+          You can update this page by editing <strong>index.html</strong> and pushing to the
+          <strong>main</strong> branch.
+        </p>
+        <a class="badge" href="https://github.com/mintiesabog/forbb" target="_blank" rel="noreferrer">
+          View Repository
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
